@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.ball {
+  --x: 50;
+  --y: 50;
+  position: absolute;
+  width: 10vw;
+  aspect-ratio: 1 / 1;
+  background: blue;
+  border-radius: 50%;
+  top: calc(var(--y) * 1%);
+  left: calc(var(--x) * 1%);
+  transform: translate(-50%, -50%);
+}
